@@ -4,6 +4,6 @@ body {
 h1 {
   color: #EEEEEE;
   text-align: center;
-  font-family: "Roboto",thin,thin;
-  font-weight: thin;
+  font-family: "Roboto";
+  font-weight: lighter;
 }
