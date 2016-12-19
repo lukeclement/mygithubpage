@@ -7,3 +7,6 @@ h1 {
   font-family: "Roboto";
   font-weight: lighter;
 }
+body, a:hover {
+  cursor: url(http://cur.cursors-4u.net/games/gam-16/gam1501.cur), progress !important;
+}
