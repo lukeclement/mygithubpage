@@ -6,17 +6,69 @@
   <title> :D </title>
 </head>
 <body>
-  <marquee id="day" direction=RIGHT></marquee>
+  <marquee id="day" direction=LEFT scrollamount="25"></marquee>
   <br>
-  <marquee id="person" direction=LEFT>Hi</marquee>
+  <marquee id="person" direction=RIGHT scrollamount="25">Hi</marquee>
   <br>
-  <marquee id="images" direction=RIGHT><img src=""></img></marquee>
+  <marquee id="images" direction=LEFT scrollamount="25"><img src=""></img></marquee>
 
 
     <script>
-          
-          document.getElementById("day").innerHTML = 5 + 6;
-          document.getElementById("person").innerHTML = 5 + 6;
+          var adjective=["brilliant"
+          , "radiant"
+          , "splendid"
+          , "magnificent"
+
+          , "excellent"
+          , "outstanding"
+          , "exceptional"
+          , "glorious"
+
+          , "grand"
+          , "resplendent"
+          , "delightful"
+          , "marvellous"
+
+          , "enjoyable"
+          , "pleasant"
+          , "merry"
+          , "jolly"
+
+          , "joyful"
+          , "joyous"
+          , "cheerful"
+          , "lively"
+
+          , "thrilling"
+          , "great"
+          , "luxurious"
+          , "wonderful"
+
+          , "perfect"
+          , "terrific"
+          , "fantastic"
+          , "awesome"
+
+          , "tremendous"
+          , "lovely"
+          , "enchanting"
+          , "exquisite"
+
+          , "superb"
+          , "beatific"
+          , "amazing"
+          , "incredible"
+
+          , "spectcular"
+          , "spiffing"
+          , "bright"
+          , "stellar"
+
+          , "astounding" ];
+          var num=Math.floor(Math.random() * adjective.length);
+          var numT=Math.floor(Math.random() * adjective.length);
+          document.getElementById("day").innerHTML = "Have a truly "+adjective[num]+" day today!";
+          document.getElementById("person").innerHTML = "You're a "+adjective[numT]+" person! Make sure to share it with the world!";
     </script>
 </body>
 </html>
