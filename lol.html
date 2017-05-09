@@ -8,66 +8,111 @@
 <body>
   <marquee id="day" direction=LEFT scrollamount="25"></marquee>
   <br>
-  <marquee id="person" direction=LEFT scrollamount="25" scrolldelay="40">Hi</marquee>
+  <marquee id="images" direction=RIGHT scrollamount="10">
+  </marquee>
   <br>
-  <marquee id="images" direction=LEFT scrollamount="25"><img src="https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg"></img></marquee>
+  <marquee id="person" direction=LEFT scrollamount="25" scrolldelay="40">Hi</marquee>
 
   <script>
-          var adjective=["brilliant"
-          , "radiant"
-          , "splendid"
-          , "magnificent"
+  var imageA=[
+    "https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg"
+    , "http://quotesideas.com/wp-content/uploads/2015/05/Have-a-good-day-quote.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/4b/bc/e4/4bbce4eb8478068e5e57f2335129b156.jpg"
+    , "http://s.hswstatic.com/gif/stuffyoushouldknow-14-2013-09-cute660.jpg"
+    , "http://www.shunvmall.com/data/out/60/47344514-cute-wallpaper-hd.jpg"
+    , "http://static.boredpanda.com/blog/wp-content/uuuploads/cute-baby-animals-2/cute-baby-animals-2-2.jpg"
+    , "http://www.bestsayingsquotes.com/files//good-day-sayings-quotes-pictures-2-00325b53.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/originals/b1/32/0e/b1320ea5763e0e99ca54988ac0876314.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/af/e2/b4/afe2b4a6ca3a36d05a914da9d18cff1d.jpg"
+    , "http://cdn.quotesgram.com/small/6/99/1398339309-motivational-quotes-make-today-ridiculously-amazing.jpg"
+    , "http://www.success.com/sites/default/files/8_12.jpg"
+    , "http://files.planetofsuccess.com/blog/wp-content/uploads/2015/10/tough-times1.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/04/43/3e/04433e4b7642d0c982dd396d7143653a.jpg"
+    , "https://cdn.motivationgrid.com/wp-content/uploads/2013/11/3-Motivational-Quotes.jpg"
+    , "https://www.briantracy.com/blog/wp-content/uploads/2015/12/winston-churchill-the-pessimist-sees-difficulty.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/8a/06/d2/8a06d20324deecbcd387015664c403b7.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/fa/ed/15/faed15b8891c4e9bbf4acbfa2db92d0a.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/7d/da/77/7dda77480091ce71c5b44306400a24bd.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/cb/6a/d8/cb6ad879cfceee93742d9f6808cb9b0f.jpg"
+    , "671492.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/7f/08/49/7f08499d219335b3953eb8712b77db49.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/03/b0/41/03b041182a377455b602954cbe75e87b.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/b5/3b/0f/b53b0fb4921620c21f7c34ee4d5a4a20.jpg"
+    , "https://s-media-cache-ak0.pinimg.com/736x/9d/ba/21/9dba21db18edb859eb016c183085fabd.jpg"
+    , "http://webneel.com/daily/sites/default/files/images/daily/03-2013/11-motivational-typography-quotes.jpg"
+  ];
+  //var numA=Math.floor(Math.random() * imageA.length);
+  var i;
+  for(i=0;i<imageA.length;i++){
+    document.getElementById("images").innerHTML=document.getElementById("images").innerHTML +"<img height='500' src='"+imageA[i]+"'></img>";
+  }
+    var adjective=["brilliant"
+    , "radiant"
+    , "splendid"
+    , "magnificent"
 
-          , "excellent"
-          , "outstanding"
-          , "exceptional"
-          , "glorious"
+    , "excellent"
+    , "outstanding"
+    , "exceptional"
+    , "glorious"
 
-          , "grand"
-          , "resplendent"
-          , "delightful"
-          , "marvellous"
+    , "grand"
+    , "resplendent"
+    , "delightful"
+    , "marvellous"
 
-          , "enjoyable"
-          , "pleasant"
-          , "merry"
-          , "jolly"
+    , "enjoyable"
+    , "pleasant"
+    , "merry"
+    , "jolly"
 
-          , "joyful"
-          , "joyous"
-          , "cheerful"
-          , "lively"
+    , "joyful"
+    , "joyous"
+    , "cheerful"
+    , "lively"
 
-          , "thrilling"
-          , "great"
-          , "luxurious"
-          , "wonderful"
+    , "thrilling"
+    , "great"
+    , "luxurious"
+    , "wonderful"
 
-          , "perfect"
-          , "terrific"
-          , "fantastic"
-          , "awesome"
+    , "perfect"
+    , "terrific"
+    , "fantastic"
+    , "awesome"
 
-          , "tremendous"
-          , "lovely"
-          , "enchanting"
-          , "exquisite"
+    , "tremendous"
+    , "lovely"
+    , "enchanting"
+    , "exquisite"
 
-          , "superb"
-          , "beatific"
-          , "amazing"
-          , "incredible"
+    , "superb"
+    , "beatific"
+    , "amazing"
+    , "incredible"
 
-          , "spectcular"
-          , "spiffing"
-          , "bright"
-          , "stellar"
+    , "spectcular"
+    , "spiffing"
+    , "bright"
+    , "stellar"
 
-          , "astounding" ];
-          var num=Math.floor(Math.random() * adjective.length);
-          var numT=Math.floor(Math.random() * adjective.length);
-          document.getElementById("day").innerHTML = "Have a truly "+adjective[num]+" day today!";
-          document.getElementById("person").innerHTML = "You're a "+adjective[numT]+" person! Make sure to share it with the world!";
+    , "astounding" ];
+
+    var num=Math.floor(Math.random() * adjective.length);
+    var numT=Math.floor(Math.random() * adjective.length);
+    document.getElementById("day").innerHTML = "Have a truly "+adjective[num]+" day today!";
+    document.getElementById("person").innerHTML = "You're a "+adjective[numT]+" person! Make sure to share it with the world!";
+    </script>
+    <script>
+      function done(){
+        var imageA=[
+          "<img height='500' src='https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg'></img>"
+          , "<img height='500' src='http://quotesideas.com/wp-content/uploads/2015/05/Have-a-good-day-quote.jpg'></img>"
+          , "<img height='500' src='https://s-media-cache-ak0.pinimg.com/736x/4b/bc/e4/4bbce4eb8478068e5e57f2335129b156.jpg'></img>"
+        ];
+        var numA=Math.floor(Math.random() * imageA.length);
+        document.getElementById("images").innerHTML=imageA[numA];
+      }
     </script>
 </body>
 </html>
