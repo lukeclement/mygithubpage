@@ -31,3 +31,10 @@ table{
 body{
   cursor: url(http://cur.cursors-4u.net/games/gam-16/gam1501.cur), progress !important;
 }
+marquee{
+  color: #02C4BD;
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: lighter;
+  font-size: 250;
+}
