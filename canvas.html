@@ -1,9 +1,9 @@
-<canvas id="can" width="1150" height="1000"></canvas>
+<canvas id="can" width="5000" height="5000"></canvas>
 <script>
 
   var canv=document.getElementById("can");
   var gc=canv.getContext("2d");
-  setInterval(lol,1000/60);
+  setInterval(lol,1000/120);
 
   fPx=1150/2-200;
   fPy=400;
@@ -34,7 +34,7 @@
         gc.fillStyle="#FF00FF";
         break;
         case 5:
-        gc.fillStyle="#FFFF00";
+        gc.fillStyle="#0000FF";
         break;
         case 6:
         gc.fillStyle="#000000";
