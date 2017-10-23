@@ -4,7 +4,7 @@
     <link rel="icon" type="image/png" href="16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="32x32.png" sizes="32x32">
 
-    <title>Mandel!</title>
+    <title>Mandel! MM</title>
   </head>
   <body>
     <canvas id="can" width="5000" height="5000">Uh oh, something's wrong!</canvas>
@@ -19,7 +19,7 @@
       centerY=h/2.0;
       centerX=w/2.0;
       function lol(){
-        for(var y=0; y<width; y++){
+        for(var y=0; y<w; y++){
           iC=(y-centerY)/100;
           rC=(x-centerX)/100;
           iZ=0;
@@ -32,7 +32,7 @@
             rZ=rZ+rC;
             loops++;
           }
-          gc.fillStyle="#0000FF"
+          gc.fillStyle=loops.toString(16)+loops.toString(16)+loops.toString(16);
           gc.fillRect(x,y,1,1);
           if(x>w&&o<1){
             x=0;
