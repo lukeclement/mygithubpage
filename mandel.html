@@ -32,8 +32,11 @@
             rZ=rZ+rC;
             loops++;
           }
-          gc.fillStyle=loops.toString(16)+loops.toString(16)+loops.toString(16);
-          gc.fillRect(x,y,1,1);
+          if(loops<1){
+            console.log("YASSSS");
+          }
+          //gc.fillStyle=loops.toString(16)+loops.toString(16)+loops.toString(16);
+          //gc.fillRect(x,y,1,1);
           if(x>w&&o<1){
             x=0;
             o++;
