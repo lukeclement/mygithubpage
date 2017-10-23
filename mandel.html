@@ -4,7 +4,7 @@
     <link rel="icon" type="image/png" href="16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="32x32.png" sizes="32x32">
 
-    <title>Mandel!</title>
+    <title>Mandel! MM</title>
   </head>
   <body>
     <canvas id="can" width="5000" height="5000">Uh oh, something's wrong!</canvas>
@@ -25,7 +25,7 @@
           iZ=0;
           rZ=0;
           loops=0;
-          while((i<2.0E+10||r<2.0E+10)&&loops<255){
+          while((iZ<2.0E+10||rZ<2.0E+10)&&loops<255){
             iZ=2*rZ*iZ;
             rZ=rZ*rZ-iZ*iZ;
             iZ=iZ+iC;
