@@ -26,8 +26,8 @@
           rZ=0;
           loops=0;
           while((iZ<2.0E+10||rZ<2.0E+10)&&loops<255){
-            iZ=2*rZ*iZ+iC;
-            rZ=rZ*rZ-iZ*iZ+rC;
+            iZ=(2*rZ*iZ)+iC;
+            rZ=(rZ*rZ-iZ*iZ)+rC;
             loops++;
           }
           if(loops<1){
