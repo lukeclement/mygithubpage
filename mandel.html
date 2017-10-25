@@ -7,7 +7,12 @@
     <title>Mandel!</title>
   </head>
   <body>
-    <button onclick="run()">Press me!</button>
+    <form onsubmit="run()">
+      Zoom:<input name="Z" value="1000">
+      CenterX:<input name="X" value="500">
+      CenterY:<input name="Y" value="500">
+      <input type="submit" value="Submit">
+    </form>
     <canvas id="can" width="2000" height="2000">Uh oh, something's wrong!</canvas>
     <script>
     //TODO:Add some engagement (use queries)
